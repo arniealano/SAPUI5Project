@@ -1,0 +1,22 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="capri.controller.View1">
+<Page title="Master Page">
+    <headerContent>
+        <Button icon="sap-icon://action" press="onNext"></Button>
+    </headerContent>
+    <SearchField search="onSearch"></SearchField>
+    <List items="{/fruits}" id="idList"
+          headerText="{i18n>listDescription}" mode="SingleSelectMaster" itemPress="onItemSelect">
+        <items>
+            <ObjectListItem intro="{type}" title="{name}" icon="{imageURL}" number="{price}" numberUnit="{currency}" type="Active">
+                <firstStatus>
+                    <ObjectStatus text="{status}" state="{
+                        path: 'status', 
+                        formatter: '.formatter.getStatusText'}">
+                    </ObjectStatus>
+                </firstStatus>
+            </ObjectListItem>
+        </items> 
+    </List>
+</Page>
+</mvc:View>
+

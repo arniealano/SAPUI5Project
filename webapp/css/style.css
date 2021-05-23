@@ -1,0 +1,8 @@
+/* Customizing IconTab Paddings */
+.customPadding > div > #__bar0--header-head{
+    padding-top: 1rem;
+}
+
+.customPadding > #__bar0--header {
+    padding-left: 1rem;
+}

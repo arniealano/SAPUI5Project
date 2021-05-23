@@ -1,0 +1,5 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="capri.controller.Supplier">
+<Page title="Supplier Data" showNavButton="true" navButtonPress="onBack">
+    <ObjectHeader title="{name} since {sinceWhen}" intro="{contactPerson}" icon="sap-icon://supplier" number="{contactNo}" numberUnit="{city}"></ObjectHeader>
+</Page>
+</mvc:View>

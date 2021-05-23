@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" controllerName="capri.controller.View2">
+<Page title="Detail Page" showNavButton="true" navButtonPress="onBack">
+    <ObjectHeader intro="{type}"  title="{name}" icon="{imageURL}" number="{price}" numberUnit="{currency}"/>         
+    <IconTabBar  class="customPadding">  
+        <items>
+            <IconTabFilter key="MI" icon="sap-icon://warning" text="More Info">
+                <core:Fragment fragmentName="capri.fragments.info" type="XML" />
+            </IconTabFilter>
+            <IconTabFilter key="SU" icon="sap-icon://supplier" text="Suppliers">
+                <core:Fragment fragmentName="capri.fragments.supplierTab" type="XML" />
+            </IconTabFilter>
+            <IconTabFilter key="CT" icon="sap-icon://home" text="City">
+                    <ComboBox items="{/cities}"> 
+                        <items>
+                            <core:Item key="{name}" text="{name}"></core:Item>
+                        </items>
+                    </ComboBox>
+            </IconTabFilter>
+        </items>
+    </IconTabBar>
+    <footer>
+      <Toolbar>
+        <ToolbarSpacer />
+            <Button type="Accept" text="Save"/>
+            <Button type="Reject" text="Cancel"/>
+      </Toolbar>
+    </footer>
+</Page>
+</mvc:View>

@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" controllerName="capri.controller.App">
+<Shell >
+    <!-- <App id="appContId">
+    </App> -->
+    <SplitApp id="appContId">
+    </SplitApp>
+</Shell>
+</mvc:View>
